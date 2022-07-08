@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseduo</title>
+    <style>
+        h1{
+            color: blue;
+        }
+        h1:hover{
+            color: aqua;
+            font-size: 45px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            background-color: slategray;
+        }
+        .middle-person:focus{
+            color: rgb(255, 255, 255);
+            background-color: gray;
+        }
+        a:visited{
+            color:rgb(158, 4, 63);
+            font-size: 42px;
+            text-decoration: none;
+        }
+        li{
+            font-size: 32px;
+            width: 300px;
+            height: 50px;
+        }
+        li:first-child{
+            color: blue;
+        }
+        li:last-child{
+            color: chocolate;
+            font-weight: 700;
+        }
+        li:nth-child(n){
+            background-color: aqua;
+        }
+        li:nth-child(1n){
+            color: violet;
+        }
+        li:nth-child(2n){
+            color: red;
+        }
+        li:nth-child(2n+1){
+            background-color: bisque;
+        }
+        h1::before{
+            content: "Hello ";
+        }
+        .pseduo-class::after{
+            content: " Gello";
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseduo class hover, class hover,visited and focus</h1>
+    <h4 style="color: tomato;">Focus pseduo class represent</h4>
+    <input type="text">
+    <input class="middle-person" type="text">
+    <input type="text">
+    <br><br>
+    <a href="https://www.facebook.com/">facebook</a>
+    <a href="https://github.com/kalam409">github</a>
+    <a href="https://www.cnbctv18.com/technology/this-not-google-is-the-worlds-most-visited-website-11916712.htm">Never visited website</a>
+    <ul>
+        <li>Alia-1</li>
+        <li>Alia-2</li>
+        <li>Alia-3</li>
+        <li>Alia-4</li>
+        <li>Alia-5</li>
+        <li>Alia-6</li>
+        <li>Alia-7</li>
+        <li>Alia-8</li>
+        <li>Alia-9</li>
+        <li>Alia-10</li>
+    </ul>
+    <h1>Pseduo elements and class-1</h1>
+    <h1 class="pseduo-class">Pseduo elements and class-2</h1>
+    <h1>Pseduo elements and class-3</h1>
+    <h1 class="pseduo-class">Pseduo elements and class-4</h1>
+    <h1>Pseduo elements and class-5</h1>
+    <h1 class="pseduo-class">Pseduo elements and class-6</h1>
+</body>
+</html>
