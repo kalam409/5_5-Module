@@ -10,16 +10,28 @@
             border: 2px dashed chocolate;
             /* margin: 0%; */
             width: 200px;
+            margin-left: 600px;
 
         }
-      .swimming{
-        position: sticky;
-      }
+        /* .swimming{
+            position: relative;
+      } */
+        /* #ring{
+            position: fixed;
+            top: 400px;
+        } */
+        #water{
+            position: relative;
+            top: -75px;
+        }
         #ring{
-            position: sticky;
-            top: 200px;
-            
-            
+            position: relative;
+            z-index: 1;
+        }
+        #boy{
+            position: relative;
+            top: 75px;
+            z-index: 2;
         }
         .dummy{
             background-color: rgb(170, 170, 170);
@@ -36,10 +48,26 @@
         <h1>This is my 3rd part</h1>
     </section>
     <section class="swimming">
-        <div><img src="images/boy.svg" alt=""></div>
+        <div id="boy"><img src="images/boy.svg" alt=""></div>
         <div id="ring"><img src="images/ring.svg" alt=""></div>
-        <div><img src="images/water.svg" alt=""></div>
+        <div id="water"><img src="images/water.svg" alt=""></div>
+        <!-- <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div>
+        <div class="dummy">lorem</div> -->
     </section>
+    <h1>This is separetes</h1>
     <div class="dummy">lorem-1</div>
     <div class="dummy">lorem-2</div>
     <div class="dummy">lorem-3</div>
